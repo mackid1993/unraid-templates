@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>RoonServer</Name>
+  <Repository>mackid1993/docker-roonserver</Repository>
+  <Registry>https://hub.docker.com/r/mackid1993/docker-roonserver/</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/190570-support-roonserver-photon-os/</Support>
+  <Project>https://github.com/mackid1993/docker-roonserver</Project>
+  <Overview>Roon is a premium music management and streaming platform designed for audiophiles and serious music lovers. It provides a rich, visually engaging interface that transforms digital music collections into a highly interactive experience, combining local files, streaming services like TIDAL and Qobuz, and extensive metadata to create a centralized, deeply informative library. Learn more about Roon at https://roon.app.&#xD;
+&#xD;
+This is a docker image for running Roon Server. This is a drop in replacement for steefdebruijn/docker-roonserver and based off of davidsinko/docker-roonserver. It is built using Photon OS for superior security as well as lower resource usage than other RoonServer containers. This container is set to provide monthly updates on the 1st of each month at 12 AM EST / 1 AM EDT to ensure all relevant dependencies as well as the base OS are fully updated with the latest patches and security fixes to ensure long term compatibility with Roon.</Overview>
+  <Category>MediaServer:Music</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/roonserver.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/mackid1993/unraid-templates/refs/heads/main/RoonServer/roon_logo.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1748216527</DateInstalled>
+  <DonateText>&#x200B; If you appreciate my work please consider buying me a coffee, cheers!&#xA0;&#x1F601;</DonateText>
+  <DonateLink>https://www.buymeacoffee.com/xthursdayx</DonateLink>
+  <Requires/>
+  <Config Name="Music" Target="/music" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Backup" Target="/backup" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Roon ARC" Target="55000" Default="55000" Mode="tcp" Description="Remote Listening Port" Type="Port" Display="always" Required="false" Mask="false">55000</Config>
+  <Config Name="Config" Target="/app" Default="/mnt/cache/appdata/roonserver/app/" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/roonserver/app</Config>
+  <Config Name="Data" Target="/data" Default="/mnt/cache/appdata/roonserver/data/" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/roonserver/data</Config>
+  <TailscaleStateDir/>
+</Container>
