@@ -11,7 +11,9 @@
   <Project>https://github.com/mackid1993/docker-roonserver</Project>
   <Overview>Roon is a premium music management and streaming platform designed for audiophiles and serious music lovers. It provides a rich, visually engaging interface that transforms digital music collections into a highly interactive experience, combining local files, streaming services like TIDAL and Qobuz, and extensive metadata to create a centralized, deeply informative library. Learn more about Roon at https://roon.app.&#xD;
 &#xD;
-This is a docker image for running Roon Server. This is a drop in replacement for steefdebruijn/docker-roonserver and based off of davidsinko/docker-roonserver. It is built using Photon OS for superior security as well as lower resource usage than other RoonServer containers. This container is set to provide monthly updates on the 1st of each month at 12 AM EST / 1 AM EDT to ensure all relevant dependencies as well as the base OS are fully updated with the latest patches and security fixes to ensure long term compatibility with Roon.</Overview>
+This is a docker image for running Roon Server. This is a drop in replacement for steefdebruijn/docker-roonserver and based off of David Ferreira's container found here: https://github.com/davindisko/docker-roonserver. This would not have been possible wtihout the work of Steef de Bruijn and David Ferreira on their RoonServer containers.&#xD;
+&#xD;
+It is built using Photon OS for superior security as well as lower resource usage than other RoonServer containers. This container is set to provide monthly updates on the 1st of each month at 12 AM EST / 1 AM EDT to ensure all relevant dependencies as well as the base OS are fully updated with the latest patches and security fixes to ensure long term compatibility with Roon.</Overview>
   <Category>MediaServer:Music</Category>
   <WebUI/>
   <TemplateURL/>
