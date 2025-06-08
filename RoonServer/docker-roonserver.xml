@@ -16,12 +16,12 @@ This is a docker image for running Roon Server. This is a drop in replacement fo
 It is built using Photon OS for superior security as well as lower resource usage than other RoonServer containers. This container is set to provide monthly updates on the 1st of each month at 12 AM EST / 1 AM EDT to ensure all relevant dependencies as well as the base OS are fully updated with the latest patches and security fixes to ensure long term compatibility with Roon.</Overview>
   <Category>MediaServer:Music</Category>
   <WebUI/>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/mackid1993/unraid-templates/master/RoonServer/docker-roonserver.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/mackid1993/unraid-templates/refs/heads/main/RoonServer/roon_logo.png</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1748218761</DateInstalled>
+  <DateInstalled>1749401263</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -29,6 +29,5 @@ It is built using Photon OS for superior security as well as lower resource usag
   <Config Name="Backup" Target="/backup" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="Roon ARC" Target="55000" Default="55000" Mode="tcp" Description="Remote Listening Port" Type="Port" Display="always" Required="false" Mask="false">55000</Config>
   <Config Name="Config" Target="/app" Default="/mnt/user/appdata/roonserver/app" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/roonserver/app</Config>
-  <Config Name="Data" Target="/data" Default="/mnt/user/appdata/roonserver/data" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/roonserver/data</Config>
+  <Config Name="Data" Target="/data" Default="/mnt/user/appdata/roonserver/data" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/roonserver/data</Config>
   <TailscaleStateDir/>
-</Container>
