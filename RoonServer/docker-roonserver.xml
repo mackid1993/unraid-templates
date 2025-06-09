@@ -31,3 +31,4 @@ It is built using Photon OS for superior security as well as lower resource usag
   <Config Name="Config" Target="/app" Default="/mnt/user/appdata/roonserver/app" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/roonserver/app</Config>
   <Config Name="Data" Target="/data" Default="/mnt/user/appdata/roonserver/data" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/roonserver/data</Config>
   <TailscaleStateDir/>
+  </Container>
