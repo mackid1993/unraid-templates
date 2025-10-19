@@ -26,6 +26,7 @@ One could also set up Cloudflare Access: https://developers.cloudflare.com/cloud
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
+  <DateInstalled>1760914633</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -36,7 +37,7 @@ One could also set up Cloudflare Access: https://developers.cloudflare.com/cloud
   <Config Name="CLOUDFLARE_TURNSTILE_KEY" Target="CLOUDFLARE_TURNSTILE_KEY" Default="" Mode="" Description="OPTIONAL. If you want to use Turnstile to show a captcha when someone creates an account." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="CLOUDFLARE_TURNSTILE_SECRET" Target="CLOUDFLARE_TURNSTILE_SECRET" Default="" Mode="" Description="OPTIONAL. If you want to use Turnstile to show a captcha when someone creates an account." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="CLOUDFLARE_ZONE_ID" Target="CLOUDFLARE_ZONE_ID" Default="" Mode="" Description="OPTIONAL. If you want to use Cloudflare proxy in front of your server." Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="CLOUDFLARE_API_KEY" Target="CLOUDFLARE_API_KEY" Default="" Mode="rw" Description="OPTIONAL. If you want to use Cloudflare proxy in front of your server." Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="CLOUDFLARE_API_KEY" Target="CLOUDFLARE_API_KEY" Default="" Mode="" Description="OPTIONAL. If you want to use Cloudflare proxy in front of your server." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="FOLDER_PREFIX" Target="FOLDER_PREFIX" Default="" Mode="" Description="OPTIONAL. Set this to 1 or 2 if you want user files to be split into subfolders based on the first N characters of the filename." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
