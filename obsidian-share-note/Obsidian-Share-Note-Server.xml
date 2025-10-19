@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Obsidian-ShareNote-Server</Name>
+  <Repository>ghcr.io/note-sx/server:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forum.obsidian.md/t/share-note-plugin-share-individual-notes-with-full-support-for-themes-images-dataview-callouts-and-more/42788</Support>
+  <Project>https://github.com/note-sx/server</Project>
+  <Overview>Instantly share a note, with the full theme and content exactly like you see it in Obsidian. Data is shared encrypted by default, and only you and the person you send it to have the key.&#xD;
+&#xD;
+More info: https://share.note.sx and https://github.com/alangrainger/share-note&#xD;
+&#xD;
+This is the selfhosted backend for the Obsidian Plugin. I did not create this, I am only creating a template for Unraid users.&#xD;
+&#xD;
+This is well paired with a Cloudflare tunnel. &#xD;
+&#xD;
+One could also set up Cloudflare Access: https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/security/secure-with-access/ to "https://your-share-domain.com/v1/account" to prevent someone unauthorized from creating an account.&#xD;
+</Overview>
+  <Category>Productivity:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/mackid1993/unraid-templates/refs/heads/main/obsidian-share-note/note-sx.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="BASE_WEB_URL" Target="BASE_WEB_URL" Default="" Mode="" Description="The base public URL for your server." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="NODE_ENV" Target="NODE_ENV" Default="production" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">production</Config>
+  <Config Name="HASH_SALT" Target="HASH_SALT" Default="" Mode="" Description="REQUIRED: Any random string." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="MAXIMUM_UPLOAD_SIZE_MB" Target="MAXIMUM_UPLOAD_SIZE_MB" Default="" Mode="" Description="The maximum allowed size for user uploads in megabytes (MB)." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="CLOUDFLARE_TURNSTILE_KEY" Target="CLOUDFLARE_TURNSTILE_KEY" Default="" Mode="" Description="OPTIONAL. If you want to use Turnstile to show a captcha when someone creates an account." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="CLOUDFLARE_TURNSTILE_SECRET" Target="CLOUDFLARE_TURNSTILE_SECRET" Default="" Mode="" Description="OPTIONAL. If you want to use Turnstile to show a captcha when someone creates an account." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="CLOUDFLARE_ZONE_ID" Target="CLOUDFLARE_ZONE_ID" Default="" Mode="" Description="OPTIONAL. If you want to use Cloudflare proxy in front of your server." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="CLOUDFLARE_API_KEY" Target="CLOUDFLARE_API_KEY" Default="" Mode="rw" Description="OPTIONAL. If you want to use Cloudflare proxy in front of your server." Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="FOLDER_PREFIX" Target="FOLDER_PREFIX" Default="" Mode="" Description="OPTIONAL. Set this to 1 or 2 if you want user files to be split into subfolders based on the first N characters of the filename." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="/notesx/db" Target="/notesx/db" Default="/mnt/user/appdata/notesx/db" Mode="rw" Description="Database" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/notesx/db</Config>
+  <Config Name="/notesx/userfiles" Target="/notesx/userfiles" Default="/mnt/user/appdata/notesx/userfiles" Mode="rw" Description="User Files" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/notesx/userfiles</Config>
+  <Config Name="Port" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="advanced" Required="true" Mask="false">3000</Config>
+</Container>
