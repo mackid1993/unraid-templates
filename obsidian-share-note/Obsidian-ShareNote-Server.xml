@@ -26,7 +26,7 @@ One could also set up Cloudflare Access: https://developers.cloudflare.com/cloud
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1760914633</DateInstalled>
+  <DateInstalled></DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
