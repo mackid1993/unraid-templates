@@ -34,7 +34,7 @@ NVIDIA GPU:&#13;
 1. Install Nvidia-Driver plugin from Community Apps&#13;
 2. Edit this container, add --runtime=nvidia to Extra Parameters&#13;
 3. In Advanced View, set NVIDIA Visible Devices to: all&#13;
-4. Apply and verify with: docker exec channels-dvr nvidia-smi&#13;
+4. Apply, shell into the container and verify with nvidia-smi&#13;
 5. Remove the Intel GPU variable</Overview>
   <Category>MediaServer:Video</Category>
   <WebUI>http://[IP]:8089</WebUI>
