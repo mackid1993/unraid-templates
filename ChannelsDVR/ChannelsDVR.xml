@@ -12,6 +12,8 @@
   <ReadMe/>
   <Overview>Unoffical Channels DVR Docker for Unraid.&#13;
 &#13;
+**FANCY BITS LLC IS NOT AFFILIATED WITH THIS PACKAGE AND WILL *NOT* PROVIDE SUPPORT**
+&#13;    
 Based on Debian Bookworm with minimal tini init system.&#13;
 &#13;
 Key Features:&#13;
